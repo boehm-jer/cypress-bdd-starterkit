@@ -1,0 +1,36 @@
+{
+    "name": "pixo-qa-cypress-bdd-starterpack",
+    "version": "1.0.0",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/pixotech/pixo-qa-cypress-bdd-starterpack.git"
+    },
+    "author": "jeremy",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://bitbucket.org/pixotech/pixo-qa-cypress-bdd-starterpack/issues"
+    },
+    "homepage": "https://bitbucket.org/pixotech/pixo-qa-cypress-bdd-starterpack#readme",
+    "scripts": {
+        "start": "cypress open --detached",
+        "test": "cypress open --detached",
+        "headless": "cypress run"
+    },
+    "devDependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "latest",
+        "@bahmutov/cypress-esbuild-preprocessor": "latest",
+        "@cypress/xpath": "^2.0.3",
+        "axe-core": "^4.6.3",
+        "cypress": "latest",
+        "cypress-axe": "^1.3.0",
+        "dotenv": "^16.0.3",
+        "esbuild": "^0.16.17",
+        "prettier": "^2.8.3",
+        "typescript": "latest"
+    },
+    "cypress-cucumber-preprocessor": {
+        "filterSpecs": true,
+        "omitFiltered": true
+    }
+}
