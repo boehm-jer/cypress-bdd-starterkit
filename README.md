@@ -9,11 +9,8 @@
 `npx cypress run --env tags="@my-tag-name"`
 
 ## AXE Core Plugin:
-To run accessibility tests on a page you need to visit the page and inject the axe core cypress plugin.
-
+To run accessibility tests on a page utilize the `AccessibilityHelpers` class. 
 ```typescript
-Before(() => {
-    cy.visit('https://duckduckgo.com/');
-    cy.injectAxe()
-})
+// Example:
+AccessibilityHelpers.ActivateAxeCoreChecker('serious')
 ```
