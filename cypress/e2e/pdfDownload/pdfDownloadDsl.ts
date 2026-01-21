@@ -1,4 +1,4 @@
-import PdfValidationHelper from "../../support/helpers/pdfValidationHelpers";
+import PdfValidationHelpers from "../../support/helpers/pdfValidationHelpers";
 import DSL from "../../support/helpers/dsl";
 
 export default class PdfDownloadDsl extends DSL {
@@ -17,7 +17,7 @@ export default class PdfDownloadDsl extends DSL {
     }
 
     public validatePdfContent(){
-        PdfValidationHelper.ValidateDownloadedPdf('PDF_metadata.pdf','contain',['Testing', 'PDF', 'metadata'])
-        PdfValidationHelper.ValidateDownloadedPdf('PDF_metadata.pdf','not.contain',['milk','cheese','eggs'])
+        PdfValidationHelpers.ValidateDownloadedPdf('PDF_metadata.pdf','contain',['Testing', 'PDF', 'metadata'])
+        PdfValidationHelpers.ValidateDownloadedPdf('PDF_metadata.pdf','not.contain',['milk','cheese','eggs'])
     }
 }

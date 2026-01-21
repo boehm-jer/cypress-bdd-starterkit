@@ -1,4 +1,4 @@
-export default class PdfValidationHelper {
+export default class PdfValidationHelpers {
 
     static ValidateDownloadedPdf(
         fileName: string,
