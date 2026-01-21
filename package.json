@@ -1,24 +1,18 @@
 {
-    "name": "cypress-bdd-starterkit",
+    "name": "cypress",
+    "main": "cypress.config.ts",
     "scripts": {
         "start": "cypress open --detached",
         "test": "cypress open --detached",
         "headless": "cypress run"
     },
     "dependencies": {
-        "@badeball/cypress-cucumber-preprocessor": "latest",
-        "@bahmutov/cypress-esbuild-preprocessor": "latest",
-        "@cypress/xpath": "^2.0.3",
-        "axe-core": "^4.6.3",
-        "cypress": "latest",
-        "cypress-axe": "^1.3.0",
-        "dotenv": "^16.0.3",
-        "esbuild": "latest",
+        "@badeball/cypress-cucumber-preprocessor": "21.0.2",
+        "@bahmutov/cypress-esbuild-preprocessor": "2.2.3",
+        "cypress": "13.15.1",
+        "cypress-axe": "1.5.0",
+        "pdf-parse": "^1.1.1",
         "prettier": "^2.8.3",
-        "typescript": "latest"
-    },
-    "cypress-cucumber-preprocessor": {
-        "filterSpecs": true,
-        "omitFiltered": true
+        "typescript": "5.6.3"
     }
 }
