@@ -1,9 +1,12 @@
 # BDD starter kit
 
+A starter kit for using behavior driven development and Cypress for end-to-end testing.
+
+---
 ## Install and run
 * `npm install`
 * `npm run test` - open cypress ui
-* `npm run headless` - run in terminal
+* `npm run headless` - run all tests in terminal
 
 ## Accessibility Testing (AXE Core Plugin):
 To run accessibility tests on a page utilize the `AccessibilityHelpers` class. 
