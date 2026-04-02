@@ -38,7 +38,11 @@ async function setupNodeEvents(
         },
     });
 
-    // Ensure the downloads folder is empty at the start of each new test.
+    /*
+    Ensure the downloads folder is empty at the start of each new test, even in cypress interactive mode.
+    The config already makes sure this will happen when running headlessly (via "trashAssetsBeforeRuns: true").
+    However, that config setting does not apply to the cypress interactive mode (i.e., cypress open).  
+    */
     on('before:spec', spec => {
         const dir = './cypress/downloads';
 
@@ -47,10 +51,12 @@ async function setupNodeEvents(
 
     return config;
 }
-
+  
+// Define the configuration settings for cypress. 
 let config = defineConfig({
     e2e: {
         specPattern: '**/*.feature',
+        trashAssetsBeforeRuns: true,
         setupNodeEvents,
     },
 });

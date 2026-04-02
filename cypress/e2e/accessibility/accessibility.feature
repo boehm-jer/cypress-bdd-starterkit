@@ -6,7 +6,7 @@ Feature: Accessibility
     Given I am visiting "<webpage>"
     Then "<severity>" accessibility checks should pass
     Examples:
-      |webpage                                | severity |
-      |w3.org/WAI/standards-guidelines/wcag/  | serious  |
-      |deque.com/axe/axe-core/                | critical |
+      |webpage                 | severity |
+      |example.cypress.io/     | minor    |
+      |deque.com/axe/axe-core/ | critical |
 

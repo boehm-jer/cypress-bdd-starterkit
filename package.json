@@ -2,9 +2,8 @@
     "name": "cypress",
     "main": "cypress.config.ts",
     "scripts": {
-        "start": "cypress open --detached",
-        "test": "cypress open --detached",
-        "headless": "cypress run"
+        "start": "cypress open --browser chrome --detached",
+        "test":  "cypress run"
     },
     "dependencies": {
         "@badeball/cypress-cucumber-preprocessor": "21.0.2",
