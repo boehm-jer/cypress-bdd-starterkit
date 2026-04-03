@@ -36,3 +36,26 @@ PdfValidationHelper.ValidateDownloadedPdf("PDF_metadata.pdf", "contain", [
 ## Feature tags
 
 `npx cypress run --env tags="@my-tag-name"`
+
+## Recommended IED Extensions/Plugins
+Adding these extensions to your IDE will greatly improve your experience using this starter kit.  
+
+### JetBrains Plugins
+
+* Cucumber +
+
+### VS Code Extensions
+
+* Cucumber 
+* Cucumber (Gherkin) Full Support
+
+To work properly, you will also need to add the following to your `.vscode` > `settings.json` file. 
+```json
+{
+    "cucumber.features": ["cypress/e2e/**/*.feature"],
+    "cucumber.glue": ["cypress/e2e/**/*.ts"],
+    "cucumberautocomplete.steps": ["cypress/e2e/**/*.ts"],
+    "cucumberautocomplete.syncfeatures": "cypress/e2e/**/*.feature"
+}
+```
+
