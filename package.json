@@ -2,7 +2,7 @@
     "name": "cypress",
     "main": "cypress.config.ts",
     "scripts": {
-        "start": "cypress open --browser chrome --detached",
+        "start": "cypress open --detached",
         "test":  "cypress run"
     },
     "dependencies": {
